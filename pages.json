@@ -1,0 +1,87 @@
+{
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/equipment/equipment",
+			"style": {
+				"navigationBarTitleText": "设备",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/disposition/disposition",
+			"style": {
+				"navigationBarTitleText": "配置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+				// "navigationStyle":"custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "袁瑾商城",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"color": "#2c2c2c",
+		"borderStyle": "#ffffff",
+		"selectedColor": "#d81e06",
+		"height": "60px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/tabbar/index.png",
+				"selectedIconPath": "/static/tabbar/index-selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/equipment/equipment",
+				"iconPath": "/static/tabbar/cate.png",
+				"selectedIconPath": "/static/tabbar/cate-selected.png",
+				"text": "设备"
+			},
+			{
+				"pagePath": "pages/disposition/disposition",
+				"iconPath": "/static/tabbar/find.png",
+				"selectedIconPath": "/static/tabbar/find-selected.png",
+				"text": "配置"
+			},
+			{
+				"pagePath": "pages/set/set",
+				"iconPath": "/static/tabbar/user.png",
+				"selectedIconPath": "/static/tabbar/user-selected.png",
+				"text": "设置"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
