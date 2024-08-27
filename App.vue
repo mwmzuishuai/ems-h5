@@ -15,5 +15,8 @@
 <style lang="scss">
 	@import "uview-plus/index.scss";
 	/*每个页面公共css */
-	
+	#app{
+		background-color: #161622;
+		color: #fff;
+	}
 </style>
